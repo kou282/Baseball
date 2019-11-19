@@ -6,6 +6,14 @@ TagManager:
   tags:
   - Bat
   - Ground
+  - Defense
+  - Single
+  - Double
+  - Triple
+  - Fineplay
+  - Homerun
+  - Foul
+  - Runner
   layers:
   - Default
   - TransparentFX

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pitching : MonoBehaviour
 {
-  private float timer = 0.0f;
-  private float nextball = 1.0f;
+  private float time = 0.0f;
+  private float nextball = 1.5f;
   public static int  next = 0;
     // Start is called before the first frame update
     void Start()
@@ -17,14 +17,17 @@ public class Pitching : MonoBehaviour
     void Update()
     {
       if(next==1){
-        timer += Time.deltaTime;
+        time += Time.deltaTime;
       }
-      if((timer >nextball) & next==1) {
-        float s = 4000;//speed
+      if((time　>nextball) & next==1) {
+        float s = Random.Range(4000,8000);//speed
         Rigidbody rigidbody = GetComponent<Rigidbody>();
         rigidbody.AddForce(0, 0, -s);//打ち出す
 
-        timer = 0.0f;
+        time = 0.0f;
+        next = 0;
+      }
+      if(OutCount.outCount==3){
         next = 0;
       }
     }
