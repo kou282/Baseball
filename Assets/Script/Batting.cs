@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Batting : MonoBehaviour
 {
-  private int a =-10;//angle
+  private int a =-9;//angle
   private int a_sum = 0;//angle sum
 
     void Start()

@@ -16,7 +16,7 @@ public class GameStart : MonoBehaviour
     {
 
     }
-    public void PushButton() {
+    public void Onclick() {
     SceneManager.LoadScene("Main");
   }
 }

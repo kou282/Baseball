@@ -21,7 +21,7 @@ public class Move_Defense : MonoBehaviour
     defense_z = defense.z;
 
     direction = Random.Range(0,2) == 0;
-    x = Random.Range(0.1f,0.4f);
+    x = Random.Range(0.1f,0.3f);
   }
 
   // Update is called once per frame

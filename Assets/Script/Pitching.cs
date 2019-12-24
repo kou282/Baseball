@@ -20,7 +20,7 @@ public class Pitching : MonoBehaviour
         time += Time.deltaTime;
       }
       if((time　>nextball) & next==1) {
-        float s = Random.Range(4000,8000);//speed
+        float s = Random.Range(3000,7000);//speed
         Rigidbody rigidbody = GetComponent<Rigidbody>();
         rigidbody.AddForce(0, 0, -s);//打ち出す
 
